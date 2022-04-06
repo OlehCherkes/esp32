@@ -1,7 +1,7 @@
 #include "TFT.h"
 #include "Bitmap.h" 
 
-
+// Функция вывода главного меню
 void DrawMain() {
 tft.fillScreen(0x0000);
 
@@ -56,8 +56,9 @@ tft.setTextColor(0x0778);
 tft.print("Fun Speed: "); tft.print("0"); tft.print(" %");
 }
 
+// Функция прорисовки кнопок
 void DrawButton() {
-    // Прорисовка кнопоки 1
+// Прорисовка кнопоки 1
 tft.drawRoundRect(30, 280, 80, 30, 3, 0xFF20);
 tft.drawRoundRect(29, 280, 80, 30, 3, 0xFF20);
 tft.drawRoundRect(28, 280, 80, 30, 3, 0xFF20);
@@ -74,7 +75,7 @@ tft.setCursor(125, 304);
 tft.print(" < Hz");
 
 // Прорисовка кнопоки 3
-tft.drawRoundRect(210, 280, 80, 30, 3, 0xFF20);  //0xE760
+tft.drawRoundRect(210, 280, 80, 30, 3, 0xFF20);  
 tft.drawRoundRect(209, 280, 80, 30, 3, 0xFF20);
 tft.drawRoundRect(208, 280, 80, 30, 3, 0xFF20);
 tft.setTextColor(0xFFFF);
@@ -91,7 +92,7 @@ tft.print(" PWM");
 }
 
 // Функция вывода заставки
-void L13(){
+void L13_Start(){
 tft.fillScreen(0x0000);
 for (int i = 0; i <= 480; i++) {
 tft.drawPixel(i, 70, 0xFF20);

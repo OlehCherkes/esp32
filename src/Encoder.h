@@ -8,7 +8,7 @@ Encoder enc1(CLK, DT);     // инициализация энкодера
 
 int value1 = 0;    // счетчик энкодера
 
-// функция настроек энкодеров для Stup
+// Функция настроек энкодеров для Setup
 void Encoder_setings() {
 enc1.setType(TYPE1);    // тип энкодера TYPE1 одношаговый
 }
